@@ -1,0 +1,48 @@
+gtfs:
+  service_date: '20261116'
+  route_manifest: data/processed/gtfs/route_manifest.json
+  source: https://raw.githubusercontent.com/Vonter/bmtc-gtfs/a4702664d65bfbb37290a5f75effaa24ead1d9dd/gtfs/bmtc.zip
+  max_segment_speed_kmh: 100
+  min_daily_trips: 30
+  train_count: 2
+  transfer_count: 1
+bunching:
+  ratio: 0.20
+  horizons_stops: [3, 5, 8]
+  sensitivity_ratios: [0.20, 0.25, 0.30]
+holding:
+  actions_s: [0, 15, 30, 45, 60, 90]
+  forward_gain: 0.72
+  two_headway_gain: 0.68
+gps:
+  timezone: Asia/Kolkata
+  min_speed_kmh: 3
+  max_speed_kmh: 90
+  max_ping_gap_s: 120
+  max_match_distance_m: 35
+  ambiguity_margin_m: 4
+  corridor_buffer_m: 120
+  min_samples: 5
+  min_buses: 2
+sim:
+  begin_s: 25200            # 07:00 IST, seconds after midnight
+  end_s: 39600              # 11:00 IST, last departure simulated
+  routes:                   # scenario key -> GTFS route_id (roles are in route_manifest.json)
+    375d: BMTC:f24361ed9448
+    "378": BMTC:0d990fa9636d
+    401m: BMTC:e0c7829c0795
+  demand_per_min: 0.4       # passengers per minute per stop, off-peak (assumed; no public ridership)
+  peak_factor: 1.0          # extra demand at the 08:30 peak (1.0 doubles it)
+  capacity: 80
+  dwell_fixed_s: 4.0
+  board_s: 2.0
+  alight_s: 1.2
+  min_departure_gap_s: 120  # drop timetable trips closer than this to the previous trip
+  speed_dev: 0.1
+  traffic_veh_per_hour: 200 # background vehicles per direction along the corridor
+  traffic_mix: {motorcycle: 0.5, car: 0.3, auto: 0.2}
+  speed_calibration: 2.35   # GPS median speeds x this; see SIMULATION.md "Calibration"
+  rain_speed_factor: 0.7    # rain scenario: every road 30% slower
+  breakdown_window_s: [3600, 7200]  # breakdown happens this long after begin_s
+  seeds_train: [1, 2, 3, 4, 5]
+  seeds_test: [101, 102, 103]

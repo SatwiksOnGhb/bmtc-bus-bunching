@@ -1,0 +1,60 @@
+{
+  "raw_pings": 6013915,
+  "invalid_pings": 0,
+  "invalid_coordinate_rows": 0,
+  "invalid_timestamp_rows": 0,
+  "valid_rows": 6013915,
+  "duplicate_or_conflicting_pings": 0,
+  "unique_buses": 1942,
+  "pairs_without_valid_time_gap": 17704,
+  "pairs_below_min_speed": 3026161,
+  "pairs_above_max_speed": 17766,
+  "source_gps_rows": 6014946,
+  "normalization_drops": {
+    "missing_bus_id": 0,
+    "invalid_coordinate": 0,
+    "invalid_timestamp": 0,
+    "identical_duplicate": 67,
+    "conflicting_key": 964
+  },
+  "source_sha256": "25b60220c0af080d646eda399dc1381860a8aa52681ab715399181dffca62882",
+  "source": "cni_2022",
+  "status": "ready",
+  "corridor_way_count": 4088,
+  "usable_motion_pairs": 2952284,
+  "matched_same_way_pairs": 88350,
+  "insufficient_way_hour_bins": 2748,
+  "speed_rows": 2198,
+  "matched_ways": 325,
+  "matched_gps_points": 399828,
+  "unmatched_gps_points": 5614087,
+  "ambiguous_matches": 206250,
+  "no_candidate_points": 5407837,
+  "matched_osm_ways": 2690,
+  "matched_route_ids": [
+    "BMTC:0d990fa9636d",
+    "BMTC:e0c7829c0795",
+    "BMTC:f24361ed9448"
+  ],
+  "minimum_timestamp": "2019-08-01 07:00:00+05:30",
+  "maximum_timestamp": "2019-08-01 19:00:00+05:30",
+  "historical_data_year": 2019,
+  "input_years": [
+    2019
+  ],
+  "speed_outliers": 17766,
+  "osm_sha256": "a5782e632ad68d9c5fd41715e44f2bdc48930813267856f2a88b4cab1bfd02c1",
+  "filters": {
+    "timezone": "Asia/Kolkata",
+    "min_speed_kmh": 3.0,
+    "max_speed_kmh": 90.0,
+    "max_ping_gap_s": 120.0,
+    "max_match_distance_m": 35.0,
+    "ambiguity_margin_m": 4.0,
+    "corridor_buffer_m": 120.0,
+    "min_samples": 5,
+    "min_buses": 2
+  },
+  "raw_gps_rows": 6014946,
+  "duplicate_rows": 1031
+}

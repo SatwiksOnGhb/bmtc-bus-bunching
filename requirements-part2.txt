@@ -1,0 +1,11 @@
+# Part 2 (simulation, environment, runner, dashboard). Install on top of requirements-part1.txt.
+# SUMO itself: the Windows installer from https://sumo.dlr.de (sets SUMO_HOME), or `pip install eclipse-sumo`.
+gymnasium>=1.0
+pettingzoo>=1.24
+pyarrow>=15
+pyproj>=3.6
+rtree>=1.2
+streamlit>=1.40
+pydeck>=0.9
+plotly>=5.20
+matplotlib>=3.8

@@ -1,0 +1,50 @@
+{
+  "data_source": "community_gtfs_schedule",
+  "service_date": "20261116",
+  "feed_version": "20261109",
+  "input_sha256": "812c7d472ff116024ca1e0a7ff6e28662f762ca09265da8d5c7e9f6241cf8a45",
+  "routes_raw": 5063,
+  "bus_routes": 5063,
+  "routes_with_no_scheduled_service": 539,
+  "routes_without_valid_timetable": 8,
+  "routes_cleaned": 4516,
+  "active_trips_before_cleaning": 64366,
+  "trips_dropped_invalid_or_missing_timetable": 460,
+  "stop_times_raw": 2238693,
+  "active_stop_times_dropped": 16860,
+  "stops_raw": 10128,
+  "stops_used_by_clean_schedule": 9656,
+  "stops_unused_or_invalid": 472,
+  "selected_routes": [
+    {
+      "rank": 1,
+      "route_id": "BMTC:f24361ed9448",
+      "route_short_name": "375-D",
+      "route_long_name": "Banashankari Bus Station ⇔ Kengeri Bus Stand",
+      "daily_trips": 434,
+      "patterns": 4,
+      "mean_trip_min": 33.61,
+      "role": "train"
+    },
+    {
+      "rank": 2,
+      "route_id": "BMTC:0d990fa9636d",
+      "route_short_name": "378",
+      "route_long_name": "Electronic City ⇔ Kengeri Bus Stand",
+      "daily_trips": 384,
+      "patterns": 3,
+      "mean_trip_min": 83.47,
+      "role": "train"
+    },
+    {
+      "rank": 3,
+      "route_id": "BMTC:e0c7829c0795",
+      "route_short_name": "401-M",
+      "route_long_name": "Kengeri Bus Stand ⇔ Yeshwanthapura Bus Station",
+      "daily_trips": 353,
+      "patterns": 4,
+      "mean_trip_min": 56.92,
+      "role": "held_out_transfer"
+    }
+  ]
+}

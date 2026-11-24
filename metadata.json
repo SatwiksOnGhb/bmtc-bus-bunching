@@ -1,0 +1,6 @@
+{
+  "name": "BMTC Bus Bunching — Digital Twin & MARL Control Room",
+  "description": "End-to-end digital twin, bunching predictor, event-driven MAPPO holding controller, and real-time dispatcher dashboard for Bengaluru BMTC high-frequency bus corridors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

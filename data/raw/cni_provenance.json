@@ -1,0 +1,34 @@
+{
+  "source_repository": "https://github.com/HSShashank/CNI-22",
+  "source_file_url": "https://raw.githubusercontent.com/HSShashank/CNI-22/master/data/BMTC.parquet.gzip",
+  "download_date": "2026-11-23",
+  "source_sha256": "25b60220c0af080d646eda399dc1381860a8aa52681ab715399181dffca62882",
+  "normalized_sha256": "a27e1912e88498d71194b5093ce2bba281dde2ddbd53c3026d3ef3c44aba7d6d",
+  "schema": {
+    "BusID": "int64",
+    "Latitude": "double",
+    "Longitude": "double",
+    "Speed": "double",
+    "Timestamp": "timestamp[us]"
+  },
+  "source_rows": 6014946,
+  "normalized_rows": 6013915,
+  "dropped_rows": {
+    "missing_bus_id": 0,
+    "invalid_coordinate": 0,
+    "invalid_timestamp": 0,
+    "identical_duplicate": 67,
+    "conflicting_key": 964
+  },
+  "null_counts": {
+    "bus_id": 0,
+    "timestamp": 0,
+    "lat": 0,
+    "lon": 0
+  },
+  "source_year": 2019,
+  "timezone_policy": "Timezone-naive values interpreted as Asia/Kolkata",
+  "minimum_timestamp": "2019-08-01 07:00:00+05:30",
+  "maximum_timestamp": "2019-08-01 19:00:00+05:30",
+  "normalized_output": "data/raw/cni_normalized.csv"
+}

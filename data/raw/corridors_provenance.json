@@ -1,0 +1,26 @@
+{
+  "nodes": 73464,
+  "ways": 21246,
+  "corridor_intersecting_ways": {
+    "BMTC:0d990fa9636d": 1856,
+    "BMTC:e0c7829c0795": 1830,
+    "BMTC:f24361ed9448": 967
+  },
+  "osm_snapshot_utc": "2026-06-01T08:52:28Z",
+  "query_response_sha256": "f346b598e5d1bcfb32f2c3192c277b540e683243b65115c4883f7e39f7d4e1bb",
+  "source_url": "https://overpass.private.coffee/api/interpreter",
+  "download_date": "2026-11-23",
+  "query": "[out:xml][timeout:150];way[\"highway\"](12.82720,77.46934,13.03955,77.67994);(._;>;);out body;",
+  "crs": "EPSG:4326",
+  "bbox_west_south_east_north": [
+    77.46933999999999,
+    12.8272,
+    77.67994,
+    13.03955
+  ],
+  "buffer_m": 1000,
+  "sha256": "a5782e632ad68d9c5fd41715e44f2bdc48930813267856f2a88b4cab1bfd02c1",
+  "selected_gtfs_sha256": "18d1fa477ffb2d8eb2b7676763296068b467722c475fff23ba55c7e2c6908207",
+  "attribution": "\u00a9 OpenStreetMap contributors, ODbL 1.0; via Overpass",
+  "command": "python -m data.corridors --source-url https://overpass.private.coffee/api/interpreter --buffer-m 1000"
+}

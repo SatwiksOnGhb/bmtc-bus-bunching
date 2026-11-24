@@ -1,0 +1,19 @@
+BMTC GPS update for Varun and Satwik
+
+Extract this ZIP into a new folder. The real speed table is runs/gps/osm_way_speeds.csv.
+Open data/eda.ipynb to see the measured results. The selected GTFS, OSM extract,
+Python code, notebook and measured outputs are already included.
+
+The two large generated files are omitted in this smaller download.
+From this folder in your active Python 3.11 PowerShell environment:
+python -m pip install -r requirements-part1.txt
+python -m pytest -q
+
+To also generate data/raw/cni_normalized.csv and check its checksum:
+python -m data.cni --download
+python scripts/check_handoff.py
+
+To generate runs/sumo/bmtc.net.xml with SUMO installed:
+netconvert --osm-files data/raw/corridors.osm --output.original-names true -o runs/sumo/bmtc.net.xml
+
+See README.md for the other commands.

@@ -1,0 +1,4 @@
+route_id,eligible_gaps,p10_s,p50_s,p90_s,planned_below_0.2_share,planned_below_0.25_share,planned_below_0.3_share
+BMTC:0d990fa9636d,22275,240,300.0,600,0.0,0.0655,0.0655
+BMTC:e0c7829c0795,13265,240,300.0,600,0.0029,0.0631,0.0631
+BMTC:f24361ed9448,9660,60,300.0,600,0.0687,0.1571,0.1571
